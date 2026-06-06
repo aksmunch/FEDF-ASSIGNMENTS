@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Library Book Management</title>
+</head>
+
+<body>
+
+    <h1>Library Book Management</h1>
+
+    <button onclick="displayBooks()">Display Books</button>
+    <button onclick="addBook()">Add Book</button>
+    <button onclick="updateBook()">Update Book</button>
+    <button onclick="deleteBook()">Delete Book</button>
+
+    <div id="output"></div>
+
+    <script>
+
+        // DISPLAY BOOKS
+        function displayBooks() {
+
+            document.getElementById("output").innerHTML =
+
+            "<h2>Book List</h2>" +
+
+            "<hr>" +
+
+            "<p><b>ID:</b> 1</p>" +
+            "<p><b>Title:</b> Python Programming</p>" +
+
+            "<hr>" +
+
+            "<p><b>ID:</b> 2</p>" +
+            "<p><b>Title:</b> Java Programming</p>" +
+
+            "<hr>" +
+
+            "<p><b>ID:</b> 3</p>" +
+            "<p><b>Title:</b> Web Development</p>";
+        }
+
+        // ADD BOOK
+        function addBook() {
+
+            document.getElementById("output").innerHTML =
+
+            "<h2>Book Added Successfully</h2>" +
+
+            '<p>{"title":"Cloud Computing","id":101}</p>';
+        }
+
+        // UPDATE BOOK
+        function updateBook() {
+
+            document.getElementById("output").innerHTML =
+
+            "<h2>Book Updated Successfully</h2>" +
+
+            '<p>{"title":"Advanced Java Programming","id":1}</p>';
+        }
+
+        // DELETE BOOK
+        function deleteBook() {
+
+            document.getElementById("output").innerHTML =
+
+            "<h2>Book Deleted Successfully</h2>";
+        }
+
+    </script>
+
+</body>
+</html>

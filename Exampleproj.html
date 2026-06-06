@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vaccination Record & Scheduler</title>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { margin: 0; font-family: Arial, sans-serif; }
+
+    /* Hero Section */
+    .hero {
+      position: relative;
+      height: 100vh;
+      background: #d7d0d0; /* deep maroon */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      overflow: hidden;
+    }
+
+    /* Abstract Shapes */
+    .shape {
+      position: absolute;
+      border-radius: 50%;
+      opacity: 0.8;
+    }
+    .shape1 { width: 500px; height: 500px; background: #eaf1aa; top: 20%; left: 10%; }
+    .shape2 { width: 250px; height: 250px; background: #d0e0d9; top: 10%; right: 15%; }
+    .shape3 { width: 300px; height: 300px; background: #f8d2df; bottom: 10%; right: 10%; }
+
+    /* Buttons */
+    .btn {
+      padding: 12px 24px;
+      margin: 0 10px;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .btn-login {
+      background: white;
+      color: #9f8282;
+    }
+    .btn-login:hover { background: #f1f1f1; }
+    .btn-signup {
+      border: 2px solid white;
+      color: white;
+    }
+    .btn-signup:hover { background: white; color: #f1d2d2; }
+
+    /* Sections */
+    section {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      flex-direction: column;
+      padding: 20px;
+    }
+    #about { background: #f1f1f1; }
+    #features { background: #e0f7fa; }
+    #credits { background: #ffe0b2; }
+    #contact { background: #c8e6c9; }
+  </style>
+</head>
+<body>
+  <!-- Hero Section -->
+  <div class="hero">
+    <div class="shape shape1"></div>
+    <div class="shape shape2"></div>
+    <div class="shape shape3"></div>
+    <div class="hero-content">
+      <h1>Vaccination Record & Scheduler</h1>
+      <p>Stay protected, stay scheduled.</p>
+      <a href="login.html" class="btn btn-login">Login</a>
+      <a href="register.html" class="btn btn-signup">Sign Up</a>
+    </div>
+  </div>
+
+  <!-- Scroll Sections -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>This platform helps track immunisation history, schedule vaccines, and generate certificates.</p>
+  </section>
+
+  <section id="features">
+    <h2>Features</h2>
+    <p>Record List, Scheduler, Reminders, Certificates, Upload Records, Age Planner, History, QR Code, Admin Panel, Notifications.</p>
+  </section>
+
+  <section id="credits">
+    <h2>Who Designed</h2>
+    <p>Developed by Akshita Anand using React.js, Node.js, and modern web technologies.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: yourname@example.com | © 2026 Vaccination Record & Scheduler</p>
+  </section>
+</body>
+</html>
+>

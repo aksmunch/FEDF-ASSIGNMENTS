@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Course Registration System</title>
+</head>
+
+<body>
+
+    <h1>Student Course Registration System Using Async/Await</h1>
+
+    <button onclick="viewCourses()">View Courses</button>
+    <button onclick="registerStudent()">Register Student</button>
+    <button onclick="updateRegistration()">Update Registration</button>
+    <button onclick="cancelRegistration()">Cancel Registration</button>
+
+    <div id="output"></div>
+
+    <script>
+
+        // VIEW COURSES
+        async function viewCourses() {
+
+            document.getElementById("output").innerHTML =
+
+            "<h2>Available Courses</h2>" +
+
+            "<hr>" +
+
+            "<p><b>Course Code:</b> C101</p>" +
+            "<p><b>Course Name:</b> Java Programming</p>" +
+
+            "<hr>" +
+
+            "<p><b>Course Code:</b> C102</p>" +
+            "<p><b>Course Name:</b> Python Programming</p>" +
+
+            "<hr>" +
+
+            "<p><b>Course Code:</b> C103</p>" +
+            "<p><b>Course Name:</b> Artificial Intelligence</p>";
+        }
+
+        // REGISTER STUDENT
+        async function registerStudent() {
+
+            document.getElementById("output").innerHTML =
+
+            "<h2>Student Registered Successfully</h2>" +
+
+            "<p><b>Student Name:</b> Kavya Sharma</p>" +
+            "<p><b>Course:</b> Artificial Intelligence</p>";
+        }
+
+        // UPDATE REGISTRATION
+        async function updateRegistration() {
+
+            document.getElementById("output").innerHTML =
+
+            "<h2>Registration Updated Successfully</h2>" +
+
+            "<p>Updated Course: Full Stack Web Development</p>";
+        }
+
+        // CANCEL REGISTRATION
+        async function cancelRegistration() {
+
+            document.getElementById("output").innerHTML =
+
+            "<h2>Registration Cancelled Successfully</h2>";
+        }
+
+    </script>
+
+</body>
+</html>

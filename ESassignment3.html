@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Library Book Management</title>
+</head>
+<body>
+
+<h2>Library Book Management System</h2>
+<button onclick="loadBook()">Display Details</button>
+
+<div id="library"></div>
+
+<script>
+  class Book {
+    constructor(name, author, price, discount) {
+      this.name = name;
+      this.author = author;
+      this.price = price;
+      this.discount = discount;
+    }
+
+    totalCost = () => this.price - this.discount;
+  }
+
+  // Just one book
+  const book1 = new Book("Algorithms", "Thomas Cormen", 4000, 2257);
+
+  const loadBook = () => {
+    const total = book1.totalCost();
+    const output = `
+      <p>
+        Name: ${book1.name}<br>
+        Author: ${book1.author}<br>
+        Price: ${book1.price}<br>
+        Total Cost: ${total}
+      </p>
+    `;
+    document.getElementById("library").innerHTML = output;
+  };
+</script>
+
+</body>
+</html>
+
+

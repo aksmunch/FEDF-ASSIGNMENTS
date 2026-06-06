@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Result Processing</title>
+</head>
+<body>
+<h2>Student Result Processing System</h2>
+<button onclick="loadResults()">Load Results</button>
+<div id="results"></div>
+
+<script>
+  class Student {
+    constructor(name, marks) {
+      this.name = name;
+      this.marks = marks;
+    }
+    totalMarks = () => this.marks.reduce((sum, m) => sum + m, 0);
+    averageMarks = () => this.totalMarks() / this.marks.length;
+  }
+  const sem1 = [80, 75, 90];
+  const sem2 = [85, 70, 95];
+  const allMarks = [...sem1, ...sem2];
+  const student1 = new Student("Akshita", allMarks);
+  const loadResults = () => {
+    const { name } = student1;
+    const total = student1.totalMarks();
+    const average = student1.averageMarks();
+
+    let output = "";
+    output += `<p>Name: ${name}</p>`;
+    output += `<p>Total Marks: ${total}</p>`;
+    output += `<p>Average Marks: ${average.toFixed(2)}</p>`;
+
+    document.getElementById("results").innerHTML = output;
+  };
+</script>
+
+</body>
+</html>

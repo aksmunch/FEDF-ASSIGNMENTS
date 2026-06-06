@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Management System</title>
+</head>
+
+<body>
+
+    <h1>Employee Management System</h1>
+
+    <button onclick="getEmployees()">Get Employees</button>
+    <button onclick="addEmployee()">Add Employee</button>
+    <button onclick="updateEmployee()">Update Employee</button>
+    <button onclick="deleteEmployee()">Delete Employee</button>
+
+    <div id="output"></div>
+
+    <script>
+
+        // GET
+        function getEmployees() {
+
+            document.getElementById("output").innerHTML =
+
+            "<h2>Employee List</h2>" +
+
+            "<hr>" +
+
+            "<p><b>ID:</b> 1</p>" +
+            "<p><b>Name:</b> Vikram Singh</p>" +
+            "<p><b>Salary:</b> 65000</p>" +
+            "<p><b>Email:</b> vikram@gmail.com</p>" +
+
+            "<hr>" +
+
+            "<p><b>ID:</b> 2</p>" +
+            "<p><b>Name:</b> Anjali Mehta</p>" +
+            "<p><b>Salary:</b> 72000</p>" +
+            "<p><b>Email:</b> anjali@gmail.com</p>";
+        }
+
+        // POST
+        function addEmployee() {
+
+            document.getElementById("output").innerHTML =
+
+            "<h2>Employee Added Successfully</h2>" +
+
+            '<p>{"name":"Aakash Sharma","salary":"70000","email":"aakash@gmail.com","id":11}</p>';
+        }
+
+        // PUT
+        function updateEmployee() {
+
+            document.getElementById("output").innerHTML =
+
+            "<h2>Updated Employee Details</h2>" +
+
+            "<p><b>Name:</b> Vikram Singh</p>" +
+            "<p><b>Salary:</b> 75000</p>" +
+            "<p><b>Email:</b> vikram123@gmail.com</p>";
+        }
+
+        // DELETE
+        function deleteEmployee() {
+
+            document.getElementById("output").innerHTML =
+
+            "<h2>Employee Deleted Successfully</h2>";
+        }
+
+    </script>
+
+</body>
+</html>

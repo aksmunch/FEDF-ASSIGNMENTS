@@ -1,9 +1,9 @@
-import ProductDashboard from "./Components/ProductDashboard";
+import StudentDashboard from "./Components/StudentDashboard";
 
 function App() {
   return (
     <div>
-      <ProductDashboard />
+      <StudentDashboard />
     </div>
   );
 }
